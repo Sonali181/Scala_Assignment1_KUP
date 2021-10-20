@@ -32,16 +32,16 @@ class Sorting {
   }
 
   def bubbleSort(array: Array[Int]): Array[Int] = {
-    var didSwap = false
+    var Swaping = false
 
     for (i <- 0 until array.length - 1)
       if (array(i + 1) < array(i)){
         val temp = array(i)
         array(i) = array(i + 1)
         array(i + 1) = temp
-        didSwap = true
+        Swaping = true
       }
-      if (didSwap){
+      if (Swaping){
         bubbleSort(array)
       }
       else {
